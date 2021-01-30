@@ -7,7 +7,7 @@ const initialize = () => {
   document.getElementById("timer").innerHTML = sec;
 
   document.getElementById("time-elapsed").innerHTML = sec;
-  document.getElementById("reps-remaining").innerHTML = 80;
+  document.getElementById("reps-remaining").innerHTML = 20;
   flag = "play";
   document.getElementById("pause").innerHTML = "Pause";
 };

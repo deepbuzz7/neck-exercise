@@ -57,7 +57,7 @@ async function doTheWork() {
 const front = async (direction) => {
   document.getElementById("direction").innerHTML = direction;
   return new Promise(async (resolve) => {
-    await sleep(6000);
+    await sleep(3000);
 
     await doTheWork();
     resolve();
@@ -71,17 +71,17 @@ document.getElementById("play").addEventListener("click", async () => {
   for (let i = 0; i < 5; i++) {
     await front("FRONT");
   }
-  await sleep(6000);
+  await sleep(4000);
   speak("Place your hand on the back of your head");
   for (let i = 0; i < 5; i++) {
     await front("BACK");
   }
-  await sleep(6000);
+  await sleep(4000);
   speak("Place your hand on the right side of your head");
   for (let i = 0; i < 5; i++) {
     await front("RIGHT");
   }
-  await sleep(6000);
+  await sleep(4000);
   speak("Place your hand on the left side of your head");
   for (let i = 0; i < 5; i++) {
     await front("LEFT");

@@ -65,6 +65,8 @@ const front = async (direction) => {
 };
 
 document.getElementById("play").addEventListener("click", async () => {
+  document.getElementById("play").disabled=true;
+  document.getElementById("play").style.opacity=0.2;
   totalTime();
   document.getElementById("reps-remaining").innerHTML = 20;
   speak("Place your hand on your fore head");
